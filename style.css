@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to top, #cfd9df 0%, #0e0029b3 100%);
+}
+
+@font-face {
+  font-family: Mellony;
+  src: url('./font/mellony\ dry\ brush.ttf') format('truetype');
+}
+canvas {
+  background: white;
+}
+.toolbox {
+  font-family: Mellony;
+  display: flex;
+  width: 600px;
+  padding: 1rem;
+  background-image: linear-gradient(to top, #14024dbd 0%, #cbe6f3a1 100%);
+}
+.toolbox > * {
+  background: #240641c7;
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.toolbox > *:last-child {
+  font-family: Mellony;
+  margin-left: auto;
+  margin-left: auto;
+  background: #240641c7;
+  min-width: 107px;
+  border-radius: 21px;
+  font-size: 1rem;
+  color: white;
+}
+
+.toolbox > *:last-child:hover {
+  background: #3806418f;
+  transition: 0.5s ease;
+}
